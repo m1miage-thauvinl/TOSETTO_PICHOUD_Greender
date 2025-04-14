@@ -1,0 +1,64 @@
+{
+  "vegetables": [
+    {
+      "name": "Carotte",
+      "description": "Légume racine orange, sucré et croquant.",
+      "season": "Hiver - Printemps",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Carrot_vegetable.jpg"
+    },
+    {
+      "name": "Tomate",
+      "description": "Fruit-légume rouge, juteux et savoureux.",
+      "season": "Été",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/8/88/Bright_red_tomato_and_cross_section02.jpg"
+    },
+    {
+      "name": "Courgette",
+      "description": "Légume vert allongé, tendre et doux.",
+      "season": "Été",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/1/11/Zucchini_with_blossom.jpg"
+    },
+    {
+      "name": "Poireau",
+      "description": "Légume vert-blanc au goût proche de l'oignon.",
+      "season": "Automne - Hiver",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Leek_-_cross_section.jpg"
+    },
+    {
+      "name": "Épinard",
+      "description": "Feuille verte riche en fer et vitamines.",
+      "season": "Printemps - Automne",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Spinacia_oleracea_Spinazie_bloeiend.jpg"
+    },
+    {
+      "name": "Chou-fleur",
+      "description": "Légume blanc à la texture croquante, riche en fibres.",
+      "season": "Hiver",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/9/90/Cauliflower.JPG"
+    },
+    {
+      "name": "Aubergine",
+      "description": "Légume violet au goût subtil, souvent grillé ou rôti.",
+      "season": "Été",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Aubergine.jpg"
+    },
+    {
+      "name": "Brocoli",
+      "description": "Légume vert en bouquets, riche en vitamines.",
+      "season": "Hiver - Printemps",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/0/03/Broccoli_and_cross_section_edit.jpg"
+    },
+    {
+      "name": "Radis",
+      "description": "Petite racine piquante, rose et blanche.",
+      "season": "Printemps - Été",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Radish_01.jpg"
+    },
+    {
+      "name": "Concombre",
+      "description": "Légume long et vert, croquant et rafraîchissant.",
+      "season": "Été",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Cucumis_sativus_-_Köhler–s_Medizinal-Pflanzen-170.jpg"
+    }
+  ]
+}
