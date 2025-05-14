@@ -1,6 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:localstorage/localstorage.dart';
+import 'package:tosetto_pichoud_greender/models/vegetable.dart';
+import 'package:tosetto_pichoud_greender/services/localStorage.dart';
+import 'package:tosetto_pichoud_greender/services/spoonacular.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  LocalStorageService().init();
   runApp(const MyApp());
 }
 
@@ -54,16 +60,20 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
+  SpoonacularService service = SpoonacularService();
+  List<Vegetable> vegetables = [
+    Vegetable('courgette','','', []),
+    Vegetable('tomate','','',[])
+  ];
 
-  void _incrementCounter() {
-    setState(() {
+  Future<void> _incrementCounter() async {
+    await service.getRecipesFromIngredients(vegetables);
+    setState((){
       // This call to setState tells the Flutter framework that something has
       // changed in this State, which causes it to rerun the build method below
       // so that the display can reflect the updated values. If we changed
       // _counter without calling setState(), then the build method would not be
-      // called again, and so nothing would appear to happen.
-      _counter++;
+      // called again, and so nothing would appear to happen
     });
   }
 
@@ -106,7 +116,7 @@ class _MyHomePageState extends State<MyHomePage> {
           children: <Widget>[
             const Text('You have pushed the button this many times:'),
             Text(
-              '$_counter',
+              '11',
               style: Theme.of(context).textTheme.headlineMedium,
             ),
           ],
