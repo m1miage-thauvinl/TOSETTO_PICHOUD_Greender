@@ -1,17 +1,25 @@
 import 'package:tosetto_pichoud_greender/enums/saison.dart';
 
+// lib/models/vegetable.dart
 class Vegetable {
-   String name = '';
-   String description = '';
-   List<Saison> saisons = [];
-   String image = '';
+  final String name;
+  final String description;
+  final String season;
+  final String image;
 
+  const Vegetable({
+    required this.name,
+    required this.description,
+    required this.season,
+    required this.image,
+  });
 
-  Vegetable(this.name, this.description, this.image, this.saisons);
-
-  Map<String, dynamic> toJson(){
-    return {
-      "name": name,
-    };
+  factory Vegetable.fromJson(Map<String, dynamic> json) {
+    return Vegetable(
+      name: json['name'],
+      description: json['description'],
+      season: json['season'],
+      image: json['image'],
+    );
   }
 }
