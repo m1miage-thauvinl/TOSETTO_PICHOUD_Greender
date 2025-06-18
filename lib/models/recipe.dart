@@ -1,5 +1,3 @@
-import 'package:tosetto_pichoud_greender/models/ingredient.dart';
-
 class Recipe{
   String title = '';
   String image = '';

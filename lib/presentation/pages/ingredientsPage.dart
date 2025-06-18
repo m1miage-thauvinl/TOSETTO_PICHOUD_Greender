@@ -1,15 +1,11 @@
 import 'dart:core';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_card_swiper/flutter_card_swiper.dart';
-import 'package:tosetto_pichoud_greender/models/ingredient.dart';
 import 'package:tosetto_pichoud_greender/presentation/pages/recipePage.dart';
 import 'package:tosetto_pichoud_greender/presentation/widgets/ingredientsCard.dart';
 import 'package:tosetto_pichoud_greender/models/vegetable.dart';
-import 'package:flutter/services.dart'; // for rootBundle
+import 'package:flutter/services.dart';
 import 'dart:convert';
-
-import '../../models/vegetable.dart';
 
 class Ingredientspage extends StatefulWidget {
 

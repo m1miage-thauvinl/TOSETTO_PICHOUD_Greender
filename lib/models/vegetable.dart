@@ -1,6 +1,3 @@
-import 'package:tosetto_pichoud_greender/enums/saison.dart';
-
-// lib/models/vegetable.dart
 class Vegetable {
   final String name;
   final String description;

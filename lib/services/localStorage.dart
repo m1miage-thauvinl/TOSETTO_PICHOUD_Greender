@@ -1,9 +1,6 @@
 import 'dart:convert';
-
 import 'package:localstorage/localstorage.dart';
-
 import '../models/detailedRecipe.dart';
-import '../models/recipe.dart';
 
 class LocalStorageService{
   static final LocalStorageService _sharedInstance = LocalStorageService._internal();

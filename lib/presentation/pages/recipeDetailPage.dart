@@ -120,10 +120,13 @@ class _RecipeDetailPageState extends State<RecipeDetailPage> {
   @override
   Widget build(BuildContext context) {
     final recipe = widget.recipe;
-    return WillPopScope(
-        onWillPop: () async {
-          Navigator.pop(context, true); // on renvoie true pour dire "reload"
-          return false; // on empêche le pop automatique, on le fait manuellement
+    return PopScope(
+        canPop: false,
+        onPopInvokedWithResult: (didPop, result)  {
+          if (didPop){
+            return;
+          }
+          return Navigator.pop(context, true);
         },
     child:  Scaffold(
       appBar: AppBar(title: Text(recipe.title)),
