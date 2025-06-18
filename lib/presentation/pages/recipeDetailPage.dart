@@ -100,7 +100,7 @@ class _RecipeDetailPageState extends State<RecipeDetailPage> {
               style: const TextStyle(fontSize: 16),
             ),
           );
-        }).toList(),
+        }),
       ],
     );
   }
@@ -198,7 +198,7 @@ class _RecipeDetailPageState extends State<RecipeDetailPage> {
                       '${step.number}. ${step.step}',
                       style: const TextStyle(fontSize: 16),
                     ),
-                  )).toList(),
+                  )),
                 ],
               ),
             ),

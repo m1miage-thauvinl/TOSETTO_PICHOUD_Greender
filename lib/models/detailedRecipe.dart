@@ -18,7 +18,7 @@ class DetailedRecipe {
   final List<String> dishTypes;
   final List<String> diets;
   final List<InstructionStep> instructions;
-  final List<Ingredient> extendedIngredients;  // Ajout ici
+  final List<Ingredient> extendedIngredients;
 
   DetailedRecipe({
     required this.id,
